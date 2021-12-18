@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídia em HTML5</title>
+</head>
+<body>
+<h1>Imagem Dinâmica</h1>
+<p>Tente abrir esse site em dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+<picture>
+    <source media="(max-width: 800px )" srcset="imagens/gira.jpg" type="image/jpg">
+    <source media="(max-width:1100px )" srcset="imagens/giram.jpg" type="image/jpg">
+    <img src="imagens/girag.jpg" alt="imagem flexível">
+    <!--a tag picture permite ter uma imagem com diversos tamanhos. Dentro dessa tag vai a tag source media com atributo max-width+tamanho da imagem em px, srcset+a imagem selecionada, type+image/o formato da imagem se png,jpeg,jpg...-->
+</picture>
+      <h1>Reproduzindo audio</h1>
+      <p>vamos aprender a reproduzir audio em HTML.</p>
+      <audio src="midia/Sleep Away.mp3" controls autoplay loop></audio> <!--nessa tag conseguimos inserir audio em nosso site.-->
+      <source src="midia/Sleep Away.mp3" type="audio/mpeg">
+      <p>infelizmente seu navegador não consegue reproduzir o audio. <a href="midia/Sleep Away.mp3"> clique aqui para baixar seu arquivo em mp3.</a> </p>
+      <audio>
+
+          
+          <!--dentro da tag audio podemos inserir os souces com os diversos formatos de audio-->
+
+</body>
+</html>
